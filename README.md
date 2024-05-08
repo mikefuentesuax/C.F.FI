@@ -112,3 +112,14 @@ Si  A  es menor que  B , entonces  A es más eficiente.
 Al resolver la desigualdad  1024n < 16n^3, encontramos que  n  debe ser mayor que 8 para que  A sea más eficiente que  B .
 Entonces, para tamaños de entrada  n  mayores que 8,  A  es más eficiente.
 
+Parte practica:
+
+d) Responda a las siguiente preguntas:
+• ¿Deberá modificar los atributos timeline y tweets de la clase UserAccount (definida en el
+ejercicio 1) para que contenga elementos de la clase hija Retweet? Justifique su razonamiento y, si cree que hay que modificarlos, explique también cómo lo haría.
+• ¿Deberá modificar el método tweet(Tweet tweet1) de la clase UserAccount (definida en el ejercicio 1) para que pueda enviar también objetos de tipo Retweet? Justifique su razonamiento y, si cree que hay que modificarlo, explique también cómo lo haría.
+
+Respuesta:
+1. Si queremos que el timeline y los tweets de un usuario puedan incluir tanto tweets normales como retweets, sí, necesitamos modificar los atributos TIMELINE y TWEETS de la clase USERACCOUNT para permitir elementos de la clase hija RETWEET. Esto se puede lograr simplemente permitiendo que estos atributos almacenen tanto objetos de tipo TWEET como de tipo RETWEET.
+
+2. Para que un usuario pueda publicar tanto tweets normales como retweets, también necesitamos modificar el método TWEET(Tweet tweet1) de la clase USERACCOUNT. Esto se puede hacer sobrecargando el método TWEET para que acepte objetos de tipo RETWEET además de objetos de tipo TWEET. De esta forma, proporcionamos una funcionalidad más flexible que permite a los usuarios publicar ambos tipos de mensajes.
